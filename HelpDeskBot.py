@@ -64,16 +64,16 @@ def add_description(message):
     data.append(desc)
 
     # login to GLPI
-    url = 'https://hd.integrasky.ru/apirest.php'
+    url = 'https://YOUR_GLPI/apirest.php'
     user = 'glpi username'
     password = 'glpi password'
     glpi_token = 'glpi user token'
     glpi = GLPI(url, glpi_token, (user, password))
 
-    # chat_id matching with GLPI organization id (29 is: https://hd.integrasky.ru/front/entity.form.php?id=29)
+    # chat_id matching with GLPI organization id (29 is: https://YOUR_GLPI/front/entity.form.php?id=29)
     def what_group():
 
-        # (тестовый чат)
+        # (test group id)
         if chatID == -200596972:
             return 29
 
