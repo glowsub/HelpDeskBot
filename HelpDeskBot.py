@@ -115,7 +115,7 @@ def start_search(message):
         try:
             # login to glpi
             ticket_id = int(message.text)
-            url = 'https://hd.integrasky.ru/apirest.php'
+            url = 'https://YOUR_GLPI/apirest.php'
             user = 'glpi username'
             password = 'glpi password'
             glpi_token = 'glpi user token'
